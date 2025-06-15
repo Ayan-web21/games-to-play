@@ -35,7 +35,7 @@
 </head>
 <body>
 
-  <h1>Open Links</h1>
+  <h1>Flappybird link </h1>
 
   <div class="link-group">
     <h2>Game Link</h2>
