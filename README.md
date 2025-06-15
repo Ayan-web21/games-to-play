@@ -2,44 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Game Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open My Links</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #333;
-    }
-    .button-container {
-      display: inline-flex;
+      display: flex;
       flex-direction: column;
-      gap: 20px;
-      margin-top: 30px;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
     }
-    .game-button {
-      padding: 15px 25px;
-      font-size: 18px;
-      background-color: #007acc;
+
+    button {
+      padding: 1em 2em;
+      font-size: 1.1em;
+      margin: 10px;
+      background-color: #28a745;
       color: white;
       border: none;
       border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-    .game-button:hover {
-      background-color: #005fa3;
+
+    button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Game Collection</h1>
-  <div class="button-container">
-    <a href="https://ayan-web21.github.io/game/" class="game-button" target="_blank">Your Games</a>
-    <a href="https://ayan-web21.github.io/croosroads/" class="game-button" target="_blank">Crossroads Games</a>
-  </div>
+  <button onclick="openLink('https://example.com/first')">Open First Link</button>
+  <button onclick="openLink('https://example.com/second')">Open Second Link</button>
+
+  <script>
+    function openLink(url) {
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
 </html>
