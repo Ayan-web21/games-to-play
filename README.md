@@ -38,6 +38,20 @@
     border: 3px solid #444;
     border-radius: 8px;
   }
+  /* Container for embedded games */
+  .game-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+  .game-frame {
+    width: 800px;
+    height: 600px;
+    border: 3px solid #444;
+    border-radius: 8px;
+  }
 </style>
 </head>
 <body>
@@ -49,6 +63,18 @@
 
 <div>
   <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2 style="margin-top:60px;">Or scroll to play both games below:</h2>
+<div class="game-container">
+  <div>
+    <h3>Flappy Bird</h3>
+    <iframe class="game-frame" src="https://ayan-web21.github.io/game/" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div>
+    <h3>Crossroads</h3>
+    <iframe class="game-frame" src="https://ayan-web21.github.io/croosroads/" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
 
 <script>
