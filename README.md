@@ -35,8 +35,8 @@
 
 <h1>Welcome to My Games Hub</h1>
 
-<button class="btn" onclick="window.open('https://ayan-web21.github.io/game/', '_blank')">Play Flappy Bird</button>
-<button class="btn" onclick="window.open('https://ayan-web21.github.io/croosroads/', '_blank')">Play Crossroads</button>
+<button class="btn" onclick="location.href='https://ayan-web21.github.io/game/'">Play Flappy Bird</button>
+<button class="btn" onclick="location.href='https://ayan-web21.github.io/croosroads/'">Play Crossroads</button>
 
 </body>
 </html>
